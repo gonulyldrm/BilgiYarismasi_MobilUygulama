@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B18A8A"
+    tools:context=".KayitOl">
+
+    <EditText
+        android:id="@+id/kullaniciadi"
+        android:layout_width="325dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="  Kullanıcı adı"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="325dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="   Şifre"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciadi" />
+
+    <EditText
+        android:id="@+id/adsoyad"
+        android:layout_width="325dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="  Ad -- Soyad"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="325dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="   E-mail"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciadi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adsoyad" />
+
+    <Button
+        android:id="@+id/kayitol"
+        android:layout_width="189dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="73dp"
+        android:text="Kayıt Ol"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="267dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/adsoyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/puan"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="26dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
